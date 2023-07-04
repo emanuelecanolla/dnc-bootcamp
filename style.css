@@ -9,12 +9,42 @@
     width: 100%;
     height: 100px;
     background-color: #303030; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #bababa;
+}
+
+#principal button{
+    margin-right: 5%;
+    background-color: #0C70F2;
+    border: 0;
+    height: 40px;
+    width: 80px;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+    cursor: pointer;
 }
 
 #principal div a{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 600;
     color: white;
     text-decoration: none;
     font-family: 'Inter';
+}
+
+    #principal div a:hover{
+         color: #cccc;   
+    }
+
+#menu-sup{
+    display: flex;
+    width: 55%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 5%;
 }
