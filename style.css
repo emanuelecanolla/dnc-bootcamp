@@ -12,7 +12,7 @@ body{
     margin: 0px;
     padding: 0px;
 
-    background: linear-gradient(180deg, rgba(12, 112, 242, 0,5) 19.91%, rgba(12, 112, 242, 0) 24.84%), var(--preto);
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
     background-repeat: no-repeat;
 }
 
@@ -26,6 +26,14 @@ body{
     border-bottom: 1px solid #bababa
 }
 
+#menu-sup{
+    display: flex;
+    width: 45%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 5%;
+}
+
 #principal div a{
     font-size: 22px;
     font-weight: 600;
@@ -37,14 +45,6 @@ body{
     #principal div a:hover{
          color: var(--cinza-hover)   
     }
-
-#menu-sup{
-    display: flex;
-    width: 45%;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 5%;
-}
 
 #principal button{
     margin-right: 5%;
@@ -70,7 +70,7 @@ section{
     margin-bottom: 40px;
 }
     header{
-        color: #c92d2d;
+        color: #ffffff;
         font-family: var(--fonte-padrao);
     }
 
@@ -96,7 +96,7 @@ section{
     }
 
 form{
-        color: #c92d2d;
+        color: #ffffff;
         font-family: var(--fonte-padrao);
         font-size: 25px;
         font-weight: 600;
@@ -114,7 +114,7 @@ form{
         border-radius: 5px;
         height: 30px;
         border: 0;
-        background-color: #c92d2d;
+        background-color: #ffffff;
         font-size: 20px;
         padding: 10px;
         background-color: rgba(255, 255, 255, 0.9);
@@ -148,9 +148,153 @@ form{
         height: 56px;
         font-size: 32px;
         font-weight: 600;
-        color: #c92d2d;
+        color: #ffffff;
         margin-top: 100px;
         box-shadow: 0px 6px 4px rgba(12, 112,242, 0.25);
         cursor: pointer;
     }
+
+footer{
+    width: 100%;
+    background-color: var(--azul);
+}
+
+footer .line1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    
+    font-size: 25px;
+}
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+}
+
+footer h5{
+    text-align: center;
+    color: #ffffff ;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: var(--fonte-padrao);
+    background-color: var(--preto);
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    margin-bottom: 10px;
+}
+
+footer ul li{
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: var(--fonte-padrao);  
+    margin: 20px 0px 20px 0px;
+}
+
+footer ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer ul li a:hover{
+    color: var(--cinza-hover);
+}
+
+footer .adress{
+    font-weight: 600;
+    font-size: 20px;
+    font-family: var(--fonte-padrao);
+    color: #ffffff;
+    width: 25%;
+    text-align: center;
+}
+footer .line2{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 10px 10px 10px 10px;
+}
+footer .line2 a{
+    font-family: var(--fonte-padrao);
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+footer .line2 a:first-child{
+    border-right: 3px solid #ffffff;
+}
+
+footer .line2 a:hover{
+    color: var(--cinza-hover);
+}
+
+@media only screen and (max-width: 600px){
+
+    #principal{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #menu-sup{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #menu-sup a{
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
+
+    #principal button{
+        width: 100%;
+        margin: 0px;
+    }
+
+    section h1{
+        font-size: 38px;
+    }
+
+    section h2{
+        font-size: 28px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    form{
+        width: 95%;
+        font-size: 20px
+    }
+
+    .checkbox-itens label{
+        font-size: 17px;
+    }
+
+    footer .line1{
+        flex-direction: column;
+    }
+
+    footer .adress{
+        width: 95%;
+        padding-bottom: 25px;
+    }
+
+    footer .line2{
+        text-align: center;
+        padding: 20px
+    }
+}
 
